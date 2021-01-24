@@ -6,10 +6,10 @@ version: 2
     - run:
         name: Update Conan package
         command: |
-          chmod +x .circleci/install.sh
-          .circleci/install.sh
           sudo apt-get update
           sudo apt-get -y install  libfuse3-3 libfuse3-dev gcc-multilib g++-multilib
+          chmod +x .circleci/install.sh
+          .circleci/install.sh
     - run:
         name: Build recipe
         command: |

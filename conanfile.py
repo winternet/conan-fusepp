@@ -32,7 +32,7 @@ class FuseppConan(ConanFile):
         # self.run("cmake --build . %s" % cmake.build_config)
 
     def package(self):
-        self.copy("*.h", dst="include", src="fusepp")
+        self.copy("Fuse*.h", dst="include", src="fusepp")
         self.copy("Fuse.cpp", dst="include", src="fusepp")
         self.copy("*.dll", dst="bin", keep_path=False)
         self.copy("*.so", dst="lib", keep_path=False)
