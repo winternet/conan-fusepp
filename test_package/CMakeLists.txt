@@ -15,4 +15,4 @@ add_executable(example hello.cpp helloFS.cpp)
 
 target_link_libraries(example ${CONAN_LIBS} ${FUSE_LIBRARIES})
 target_include_directories(example PRIVATE ${FUSE_INCLUDE_DIRS})
-set_target_properties(example PROPERTIES COMPILE_FLAGS "-D_FILE_OFFSET_BITS=64")
+set_target_properties(example PROPERTIES COMPILE_FLAGS "-D_FILE_OFFSET_BITS=64 -fpermissive")
