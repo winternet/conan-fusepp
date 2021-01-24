@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.1)
 project(PackageTest)
 
+set(CONAN_DISABLE_CHECK_COMPILER True)
+
 include(FindPkgConfig)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
