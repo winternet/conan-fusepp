@@ -37,9 +37,9 @@ workflows:
   version: 2
   build_and_test:
     jobs:
-      - gcc-10
+      - gcc-10:
           context: conan-context
-      - gcc-9
+      - gcc-9:
           context: conan-context
 
 
