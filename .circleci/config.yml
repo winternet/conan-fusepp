@@ -15,11 +15,6 @@ version: 2
         command: |
           chmod +x .circleci/run.sh
           .circleci/run.sh
-        environment:
-          CONAN_REFERENCE: "fusepp/3.0.0"
-          CONAN_USERNAME: "winternet"
-          CONAN_CHANNEL: "testing"
-          CONAN_UPLOAD: "https://winternet.bintray.com/conan-priv"
 
 jobs:
 
@@ -43,6 +38,8 @@ workflows:
   build_and_test:
     jobs:
       - gcc-10
+          context: conan-context
       - gcc-9
+          context: conan-context
 
 
