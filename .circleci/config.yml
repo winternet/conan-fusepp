@@ -9,7 +9,7 @@ version: 2
           chmod +x .circleci/install.sh
           .circleci/install.sh
           sudo apt-get update
-          sudo apt-get -y install  libfuse3-3 libfuse3-dev gcc-multilib
+          sudo apt-get -y install  libfuse3-3 libfuse3-dev gcc-multilib g++-multilib
     - run:
         name: Build recipe
         command: |
