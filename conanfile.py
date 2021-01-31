@@ -4,11 +4,10 @@ from conans import ConanFile, CMake, tools
 class FuseppConan(ConanFile):
     name = "fusepp"
     version = "3.0.0"
-    license = "<Put the package license here>"
-    author = "<Put your name here> <And your email here>"
-    url = "<Package recipe repository url here, for issues about the package>"
-    description = "<Description of Fusepp here>"
-    topics = ("<Put some tag here>", "<here>", "<and here>")
+    license = "MIT"
+    url = "https://github.com/winternet/conan-fusepp"
+    description = "simple C++ wrapper for the FUSE filesystem"
+    topics = ("fuse3", "wrapper", "filesystem", "fs")
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False], "fPIC": [True, False]}
     default_options = {"shared": False, "fPIC": True}
